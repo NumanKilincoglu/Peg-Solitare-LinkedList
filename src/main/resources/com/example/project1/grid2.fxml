@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.gridControllerLinkedList">
+   <center>
+      <Pane fx:id="gridPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane id="1" prefHeight="658.0" prefWidth="188.0" style="-fx-background-color: #333333; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="14.0" layoutY="25.0" prefHeight="21.0" prefWidth="81.0" style="-fx-border-color: #FFFFFF;" text="Point:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="88.0" prefHeight="21.0" prefWidth="78.0" style="-fx-border-color: #FFFFFF;" text="Remaining:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button id="btn_start" fx:id="btn_start" layoutX="12.0" layoutY="273.0" mnemonicParsing="false" onAction="#startGame" prefHeight="31.0" prefWidth="165.0" text="Start">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label id="lbl_point" fx:id="lbl_point" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="25.0" prefHeight="21.0" prefWidth="81.0" style="-fx-border-color: #FFFFFF;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="lbl_remaining" fx:id="lbl_remaining" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="88.0" prefHeight="21.0" prefWidth="81.0" style="-fx-border-color: #FFFFFF;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="15.0" layoutY="154.0" prefHeight="21.0" prefWidth="79.0" style="-fx-border-color: #FFFFFF;" text="Size:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="lbl_boardSize" fx:id="lbl_boardSize" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="154.0" prefHeight="21.0" prefWidth="81.0" style="-fx-border-color: #FFFFFF;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button id="btn_state" fx:id="btn_state" layoutX="13.0" layoutY="338.0" mnemonicParsing="false" onAction="#checkGameState" prefHeight="31.0" prefWidth="165.0" text="Check Game State">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="390.0" prefHeight="21.0" prefWidth="166.0" style="-fx-border-color: #FFFFFF;" text="Possible Move:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="lbl_gameState" fx:id="lbl_gameState" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="418.0" prefHeight="21.0" prefWidth="165.0" style="-fx-border-color: #FFFFFF;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <Pane prefHeight="155.0" prefWidth="800.0" style="-fx-background-color: #333333; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="14.0" prefHeight="19.0" prefWidth="126.0" style="-fx-border-color: #FFFFFF;" text="Possible Moves:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextArea id="lbl_possibleMoves" fx:id="lbl_possibleMoves" editable="false" layoutX="7.0" layoutY="37.0" prefHeight="108.0" prefWidth="604.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
